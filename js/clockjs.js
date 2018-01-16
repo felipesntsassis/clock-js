@@ -58,7 +58,7 @@ function clock() {
     ctx.lineWidth = 14;
     ctx.beginPath();
     ctx.moveTo(-20, 0);
-    ctx.moveTo(80, 0);
+    ctx.lineTo(80, 0);
     ctx.stroke();
     ctx.restore();
 
