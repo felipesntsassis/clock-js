@@ -1,0 +1,26 @@
+/**
+  clock.css - The css style of sample.
+**/
+
+
+/* HTML elements override */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Main contents */
+
+#viewport {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+#clock-viewport {
+    border: 1px solid blue;
+}
