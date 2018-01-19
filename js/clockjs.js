@@ -74,7 +74,7 @@ function clock() {
 
     // Write Seconds
     ctx.save();
-    ctx.rotate(sec * Math.PI / 30);
+    ctx.rotate(sec * -Math.PI / 30);
     ctx.strokeStyle = '#D40000';
     ctx.fillStyle = '#D40000';
     ctx.lineWidth = 6;
@@ -83,20 +83,14 @@ function clock() {
     ctx.lineTo(95, 0);
     ctx.stroke();
     ctx.beginPath();
-    ctx.arc(0, 0, 12, 0, Math.PI * 2, true);
+    ctx.arc(0, 0, 12, 0, Math.PI * 2, false);
     ctx.fill();
-    ctx.beginPath();
-    // ctx.arc(95, 0, 10, 0, Math.PI * 2, true);
-    // ctx.stroke();
-    // ctx.fillStyle = 'rgba(0, 0, 0, 0)';
-    // ctx.arc(0, 0, 3, 0, Math.PI * 2, true);
-    // ctx.fill();
     ctx.restore();
 
     ctx.beginPath();
     ctx.lineWidth = 14;
     ctx.strokeStyle = '#325FA2';
-    ctx.arc(0, 0, 142, 0, Math.PI * 2, true);
+    ctx.arc(0, 0, 142, 0, Math.PI * 2, false);
     ctx.stroke();
 
     ctx.restore();
