@@ -6,9 +6,9 @@ function clock() {
     var now = new Date();
     var ctx = document.getElementById('clock-viewport').getContext('2d');
     ctx.save();
-    ctx.clearRect(0, 0, 150, 150);
-    ctx.translate(75, 75);
-    ctx.scale(0.4, 0.4);
+    ctx.clearRect(0, 0, 300, 300);
+    ctx.translate(150, 75);
+    ctx.scale(0.45, -0.45);
     ctx.rotate(-Math.PI / 2);
     ctx.strokeStyle = 'black';
     ctx.fillStyle = 'white';
@@ -80,17 +80,17 @@ function clock() {
     ctx.lineWidth = 6;
     ctx.beginPath();
     ctx.moveTo(-30, 0);
-    ctx.lineTo(83, 0);
+    ctx.lineTo(95, 0);
     ctx.stroke();
     ctx.beginPath();
-    ctx.arc(0, 0, 10, 0, Math.PI * 2, true);
+    ctx.arc(0, 0, 12, 0, Math.PI * 2, true);
     ctx.fill();
     ctx.beginPath();
-    ctx.arc(95, 0, 10, 0, Math.PI * 2, true);
-    ctx.stroke();
-    ctx.fillStyle = 'rgba(0, 0, 0, 0)';
-    ctx.arc(0, 0, 3, 0, Math.PI * 2, true);
-    ctx.fill();
+    // ctx.arc(95, 0, 10, 0, Math.PI * 2, true);
+    // ctx.stroke();
+    // ctx.fillStyle = 'rgba(0, 0, 0, 0)';
+    // ctx.arc(0, 0, 3, 0, Math.PI * 2, true);
+    // ctx.fill();
     ctx.restore();
 
     ctx.beginPath();
